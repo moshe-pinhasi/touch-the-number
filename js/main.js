@@ -4,6 +4,8 @@ var gNextNum;
 var gTimePassed;
 var gSecsInterval;
 
+console.log("hello")
+
 function cleanBoard() {
     var tds = document.querySelectorAll('td.clicked');
     for (var i=0; i<tds.length; i++) {
