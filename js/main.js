@@ -46,8 +46,8 @@ function cellClicked(elNum) {
     
     if (gNextNum === clickedNum) {
 
-        console.log('clicked!')
-        
+        console.log('clicked!');
+
         elNum.classList.add('clicked');
         
         if (gNextNum === 9) {
