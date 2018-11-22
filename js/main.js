@@ -4,6 +4,8 @@ var gNextNum;
 var gTimePassed;
 var gSecsInterval;
 
+console.log("hello")
+
 function cleanBoard() {
     var tds = document.querySelectorAll('td.clicked');
     for (var i=0; i<tds.length; i++) {
@@ -36,16 +38,16 @@ function restartGame() {
 function cellClicked(elNum) {
     var clickedNum = +elNum.innerText;
 
-    if (!gSecsInterval) {
-        gSecsInterval = setInterval(() => {
-            gTimePassed++;
-            updateTime();
-            
-        }, 100)        
-    }
-    
     if (gNextNum === clickedNum) {
 
+        if (!gSecsInterval) {
+            gSecsInterval = setInterval(() => {
+                gTimePassed++;
+                updateTime();
+                
+            }, 100)        
+        }
+        
         console.log('clicked!');
 
         elNum.classList.add('clicked');
