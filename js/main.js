@@ -15,7 +15,7 @@ function cleanBoard() {
 
 function updateNextNum() {
     var elSpanNextNum = document.querySelector('#spanNextNum');
-            console.log('elSpanNextNum', elSpanNextNum);
+    console.log('elSpanNextNum', elSpanNextNum);
             
     elSpanNextNum.innerText = gNextNum;
 }
