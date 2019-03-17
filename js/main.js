@@ -38,16 +38,14 @@ function restartGame() {
 function cellClicked(elNum) {
     var clickedNum = +elNum.innerText;
 
-    if (!gSecsInterval) {
-        gSecsInterval = setInterval(() => {
-            gTimePassed++;
-            updateTime();
-            
-        }, 100)        
-    }
-
     if (gNextNum === clickedNum) {
-        console.log('clicked!');
+        if (!gSecsInterval) {
+            gSecsInterval = setInterval(() => {
+                gTimePassed++;
+                updateTime();
+                
+            }, 100)        
+        }
 
         elNum.classList.add('clicked');
         
