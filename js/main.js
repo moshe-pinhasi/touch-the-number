@@ -46,7 +46,6 @@ function cellClicked(elNum) {
                 
             }, 100)        
         }
-        console.log('clicked!');
 
         elNum.classList.add('clicked');
         
